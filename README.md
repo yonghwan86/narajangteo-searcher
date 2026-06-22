@@ -1,4 +1,18 @@
-# g2b-it-bid
+# 나라장터 검색기 (나라장터 IT 입찰공고 검색기)
+
+> 조달청 나라장터 IT 입찰공고 검색 + 개찰결과(전체 투찰자 명단) 분석 **독립 실행 앱 / MCP 서버**
+
+## ⬇️ 다운로드 (Windows 64bit)
+
+### 👉 [**최신 버전 EXE 내려받기**](https://github.com/yonghwan86/narajangteo-searcher/releases/latest/download/narajangteo-searcher.exe)
+
+받은 **`narajangteo-searcher.exe`** 를 더블클릭하면 끝입니다. **설치 불필요 · Node.js 불필요.**
+
+- 실행하면 브라우저가 자동으로 열립니다(`http://localhost:7777`).
+- Windows 보안경고(SmartScreen)가 뜨면 **추가 정보 → 실행** (서명 안 된 자체 빌드라 그렇습니다).
+- 사용법·모든 버전: **[Releases 페이지 →](https://github.com/yonghwan86/narajangteo-searcher/releases)**
+
+---
 
 조달청 **나라장터 입찰공고정보서비스**(공공데이터포털 데이터번호 15129394, `BidPublicInfoService`)를
 이용해 **IT 소기업이 입찰공고를 빠르게 찾고, 참여 여부를 판단하고, 수주 가능성 높은 공공 IT 사업을
@@ -34,7 +48,7 @@ npm run build:exe      # → dist-exe/나라장터-IT입찰공고-검색기.exe 
 ```
 
 ## EXE 없이 폴더로 실행 (Node 필요)
-- 폴더의 **`시작.bat`** 더블클릭 → 의존성 자동 설치 후 실행
+- 폴더의 **`run.bat`** 더블클릭 → 의존성 자동 설치 후 실행
 - 또는 `npm install && npm run build && npm run app`
 
 ---
