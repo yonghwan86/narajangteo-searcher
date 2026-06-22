@@ -1,0 +1,55 @@
+{
+  "name": "g2b-it-bid-mcp",
+  "version": "0.1.0",
+  "description": "조달청 나라장터 입찰공고정보서비스(BidPublicInfoService) 기반 IT 소기업용 MCP 서버 — IT 입찰공고 검색·추천점수·검토메모",
+  "type": "module",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "bin": {
+    "g2b-it-bid-mcp": "build/index.js",
+    "g2b-it-bid-app": "build/web/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "app": "node build/web/index.js",
+    "dev": "node --import tsx src/index.ts",
+    "dev:app": "node --import tsx src/web/index.ts",
+    "build:exe": "npm run build && node scripts/build-exe.mjs",
+    "test": "node --import tsx --test tests/*.test.ts"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "나라장터",
+    "입찰공고",
+    "조달청",
+    "g2b",
+    "claude",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "dayjs": "^1.11.13",
+    "dotenv": "^17.3.1",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.3",
+    "esbuild": "^0.28.1",
+    "postject": "^1.0.0-alpha.6",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
